@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI EVENT</title>
+    <link rel="stylesheet" href="assignment.js">
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #fafafa;
+        }
+         img{
+            width:900px;
+            height: 100vh;
+            filter: grayscale(100%);/*make img black n white*/
+            transition: filter 0.5s ease; /* smooth transition */
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+         }
+         img:hover {
+            filter: grayscale(0%); /* full color when hovered */
+         }
+    </style>
+</head>
+<body>
+    <img src="nature.jpg">
+</body>
+</html>
