@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Form</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        #container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            background-image: linear-gradient(to bottom right, rgb(0, 160, 43), rgb(131, 78, 78), rgb(224, 231, 239), rgb(182, 96, 88), rgb(35, 179, 38));
+            padding: 20px;
+        }
+
+        .form {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            width: 320px;
+        }
+
+        .form label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+            color: #333;
+        }
+
+        .form input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 4px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+
+        .form input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        .form .gender-label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #333;
+            display: block;
+        }
+
+        .buttons {
+            text-align: center;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: rgb(145, 183, 211);
+            color: #000;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: rgb(104, 161, 202);
+        }
+
+        #card {
+            display: none;
+            width: 35%;
+            height: 35%;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <form class="form" id="form1">
+            <label for="name">Name:</label>
+            <input type="text" id="name">
+
+            <label for="address">Address:</label>
+            <input type="text" id="address">
+
+            <label for="course">Course:</label>
+            <input type="text" id="course">
+
+            <span class="gender-label">Gender:</span>
+            <label><input type="radio" name="gender" value="Male"> Male</label>
+            <label><input type="radio" name="gender" value="Female"> Female</label>
+
+            <div class="buttons">
+                <button class="btn" id="btn1" type="button">Submit</button>
+            </div>
+        </form>
+        <div id="card">
+            <div class="nn">Name is :
+                <span id="n"></span>
+            </div>
+            <br>
+            <div class="nn">Address is :
+                <span id="a"></span>
+            </div>
+            <br>
+            <div class="nn">Course is :
+                <span id="c"></span>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="Assignment4.js"></script>
+</body>
+
+</html>
